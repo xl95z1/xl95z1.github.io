@@ -1,7 +1,7 @@
-jQuery(document).ready(function(){
-    $(document).ready(function(){
-        $('.lol').venobox(); 
-    });
+$(document).ready(function(){
+ 
+    $('.lol').venobox(); 
+ 
 
     $("#firstlink").venobox().trigger('click');
 
