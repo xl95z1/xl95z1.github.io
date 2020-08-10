@@ -21,5 +21,29 @@ $(document).ready(function(){
         itemSelector: '.grid-item',
         columnWidth: '.grid-item',
       });
-
+    $("#logo").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#slides").offset().top},
+            'slow');
+    });
+    $("#home").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#slides").offset().top},
+            'slow');
+    });
+    $("#work").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#mywork").offset().top},
+            'slow');
+    });
+    $("#service").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#myservice").offset().top},
+            'slow');
+    });
+    $("#contact").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#mycontact").offset().top},
+            'slow');
+    });
 });
