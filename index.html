@@ -1,1 +1,248 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+        width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #888; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: transparent; 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+        }
+    
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>XL | Photography</title>
+        <!-- Mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styleSheet/bootstrap.css">
+        <link rel="stylesheet" href="styleSheet/sidePanel.css">
+        <link rel="stylesheet" href="styleSheet/style.css">
+        <link rel="stylesheet" href="node_modules/VenoBox-master/venobox/venobox.css" type="text/css" media="screen" />
+        <!-- Script-->
+        
+    </head>
+    <body>
+        <!-- Nav-bar-->
+        <nav class="navbar navbar-expand-md sticky-top" id="navbar">
+        <div class="container-fluid padding">
+            <a class="logo" id="logo" href="#top">
+                <img src="image/EOCphotography.png">
+            </a>
+                <div class="hamburger">
+                    <div class="text-right"> 
+                    <button class="openbtn" onclick="openNav()">
+                        <span>
+                            <div class="hamburger1"></div>
+                            <div class="hamburger2"></div>
+                            <div class="hamburger3"></div>
+                        </span>
+                    </button>
+                    </div>
+                </div>
+        <div id="mySidepanel" class="sidepanel">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+                <li><a href="#top" id = "home" class="home">Home</a></li>
+                <li><a href="#mywork" id ="work" class="work">Work</a></li>
+                <li><a href="#myservice" id ="service" class="service">Service</a></li>
+                <li><a href="#mycontact" id ="contact" class="contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+        <!--Image Carousel-->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/DSC02125.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">"Explore"</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/DSC08963.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">"Observe"</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/DSC09167.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">"Create"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- About me -->
+       <div class="aboutMe">
+        <button class="aboutbutt" data-toggle="collapse" data-target="#selfIntro">➡<span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>ABOUT ME<span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>⬅</button>
+        <div id="selfIntro" class="collapse">
+           <div class="container-fluid padding">
+            <hr style="height:1px;background-color:#818181">
+            <div class="row padding">
+              <div class="col-lg-6">
+                  <div class="para">
+                    <h2>Hi there...</h2>
+                    <p>My name is Xin Lin, I am a huge photography geek.<br>
+                      I photograph all sorts of things and I am always <br>
+                      out there exploring.
+                    </p>
+                    <p>I believe the best view is not always in front of you.<br>
+                      So, before you make another step, aways try to <br>look back.
+                  </p>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="self">
+                  <img src="image/DSC09248.jpg" class="self" >
+                </div>
+              </div>
+            </div>
+            <hr style="height:1px;background-color:#818181">
+            </div>
+           </div>
+           <!-- mywork -->
+            <div class="mywork" id="mywork">
+                <div class="grid">
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/bikeL.jpg"><img class="img-fluid"src="image/bikeS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/pillyL.jpg"><img class="img-fluid" src="image/pillyS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/empL.jpg"><img class="img-fluid" src="image/empS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/ctL.jpg"><img class="img-fluid" src="image/ctS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/streetL.jpg"><img class="img-fluid" src="image/streetS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/siL.jpg"><img class="img-fluid" src="image/siS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/akL.jpg"><img class="img-fluid" src="image/akS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/xyL.jpg"><img class="img-fluid" src="image/xyS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/longL.jpg"><img class="img-fluid" src="image/longS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/ysL.jpg"><img class="img-fluid" src="image/ysS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/fallL.jpg"><img class="img-fluid" src="image/fallS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/fzsL.jpg"><img class="img-fluid" src="image/fzsS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/ys1L.jpg"><img class="img-fluid" src="image/ys1S.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/fuzhouL.jpg"><img class="img-fluid" src="image/fuzhouS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/ctwtcL.jpg"><img class="img-fluid" src="image/ctwtcS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/boatL.jpg"><img class="img-fluid" src="image/boatS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/tsL.jpg"><img class="img-fluid" src="image/tsS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/wtc1L.jpg"><img class="img-fluid" src="image/wtc1S.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/npL.jpg"><img class="img-fluid" src="image/npS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/rfL.jpg"><img class="img-fluid" src="image/rfS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/pilly1L.jpg"><img class="img-fluid" src="image/pilly1S.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/nycL.jpg"><img class="img-fluid" src="image/nycS.jpg" /></a></div>
+                    <div class="grid-item"><a class="lol" data-gall="myGallery" href="image/emp1L.jpg"><img class="img-fluid" src="image/emp1S.jpg" /></a></div>
+           </div>
+            </div>
+            <br>
+            <!-- Services -->
+            <div class="service" id="myservice">
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h1 class="service-text">SERVICES</h1>
+                        </div>
+                    </div>
+                </div>
+                    <div class="container-fluid padding">
+                        <hr style="height:1px;background-color:#818181">
+                        <div class="row padding">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="image/ak.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Creative</h4>
+                                        <p class="card-text">One hour one on one portrait session with five professionally edited photos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="image/lj.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Graduation</h4>
+                                        <p class="card-text">One hour photo session on campus with five professionally edited photos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="image/rs.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Real Estate</h4>
+                                        <p class="card-text"> Interior / exterior of a property with twelve professionally edited photos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            <!-- contact -->
+            <div class="contact" id="mycontact">
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h1 class="contact-text"><a href="mailto:XL@Photography.com">CONTACT ME</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height:1px;background-color:#818181;width: 30%;">
+            <!-- social media -->
+            <div class="social">
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com/xl_95z1/" class="fa fa-instagram"></a>
+                            <a href="https://www.flickr.com/photos/146986558@N02/" class="fa fa-flickr"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+               X|L Photography &copy; All rights reserved
+            </footer>
+
+
+            <script>
+           
+            document.getElementById('logo').addEventListener('click', closeNav);
+            document.getElementById('home').addEventListener('click', closeNav);
+            document.getElementById('work').addEventListener('click', closeNav);
+            document.getElementById('service').addEventListener('click', closeNav);
+            document.getElementById('contact').addEventListener('click', closeNav);
+            function openNav() {
+              document.getElementById("mySidepanel").style.width = "50%";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidepanel").style.width = "0";
+            }
+            </script>
+            <script src="js/jquery.slim.min.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+            <script type="text/javascript" src="node_modules/VenoBox-master/venobox/venobox.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+  nav {
+    background-color:transparent;
+    
+  }
+  a img {
+    max-width: 100%;
+    height: auto;
+  }
+  nav ul{
+    margin-top: 140px;
+  }
+
+  nav ul li{ 
+    text-align: center; 
+    list-style-type: none; 
+    padding-top: 20px;
+  } 
+  
+  nav ul li a{ 
+    color: #818181; 
+    transition: 0.3s; 
+    text-align: center;
+    
+  }
+  
+  
+  
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: .95;
+}
+
+
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    color: #818181;
+    bottom: 20px;
+    right: 25px;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    text-decoration:none;
+  }
+  .hamburger .openbtn .hamburger1 {
+    width: 35px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin: 4.5px 0;
+  }
+
+  .hamburger .openbtn .hamburger2 {
+    width: 30px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin: 5px 5px;
+  }
+
+  .hamburger .openbtn .hamburger3 {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f1;
+    margin: 4.5px 10px;
+  }
+
+  .hamburger .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    width: 75%;
+    height: auto;
+  }
+
+  
+  .openbtn:hover {
+    background-color:transparent;
+  }
+
+
